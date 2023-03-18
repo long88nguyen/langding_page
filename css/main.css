@@ -1,0 +1,2662 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.text_upcase {
+  text-transform: uppercase;
+}
+
+.change_scroll_content {
+  margin-left: 50%;
+  transition: ease-in 0.2;
+  opacity: 1;
+}
+
+.change_scroll_img {
+  padding-left: 0;
+  transition: ease-in 0.2;
+  opacity: 1;
+}
+
+.wrapper_wr {
+  width: 100%;
+}
+
+.container_wr {
+  margin: 0 auto;
+}
+
+.wrapper_wr .container_wr .header_wr {
+  width: 100%;
+}
+
+.wrapper_wr .container_wr .header_wr .row {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* change position when to scroll */
+
+/* .scroll_fix {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.margin_left_content {
+  margin-left: 0%;
+} */
+
+/* change class link when to scroll start*/
+
+.position_scroll {
+  color: #d72229;
+}
+
+/* change class link when to scroll end*/
+
+/* style for header start */
+.wrapper_wr .container_wr .header_wr .header_top {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+.wrapper_wr .container_wr .header_wr .header_top img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper_wr .container_wr .header_wr .header_top .bg_mb {
+  display: none;
+}
+
+.wrapper_wr .container_wr .header_wr .header_bottom {
+  height: 50%;
+  background-image: url(../public/uploads/pc/sec2-bg.png);
+  background-repeat: round;
+  background-size: contain;
+}
+
+.wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt {
+  height: 100%;
+}
+
+.wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image {
+  width: 60%;
+  margin-top: 5%;
+  margin-left: 40%;
+  position: relative;
+
+}
+
+.content_wr .content_timeline-right .row {
+  margin: 0;
+  --bs-gutter-x: 0;
+}
+
+.wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image img {
+  width: 100%;
+}
+
+.wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_name {
+  position: absolute;
+  top: 72%;
+  left: 28%;
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+}
+
+
+.wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_description {
+  position: absolute;
+  top: 83%;
+  left: 30%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #c70909;
+
+
+}
+
+.header_bottom--intro .header_bottom--intro-text {
+  margin-top: 45px;
+}
+
+.header_bottom--intro .header_bottom--intro-text .header_bottom--intro-title span {
+  font-size: 26px;
+  color: #d72229;
+  font-weight: bold;
+}
+
+.header_bottom--intro .header_bottom--intro-text .header_bottom--intro-title .border-sub {
+  border: 1px solid #d72229;
+  width: 130px;
+}
+
+.header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content {
+  margin-top: 20px;
+  width: 65%;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content p {
+  margin-bottom: 25px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.line_down_1 {
+  display: none;
+}
+
+/* styles for header end */
+
+/* style for content start */
+
+.content_wr {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.content_title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #d72229;
+}
+
+.content_wr .content_timeline {
+  margin-top: 30px;
+  display: flex;
+}
+
+/* style for history events left layout start */
+.content_wr .content_timeline-left {
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  z-index: 100;
+  padding: 150px 0;
+  transition: ease 1s;
+}
+
+.show_axis {
+  opacity: 1;
+}
+
+.content_wr .content_timeline-left .content_left-history {
+  margin-left: 360px;
+  height: 100%;
+  border-left: 2px solid gray;
+  padding-left: 15px;
+  position: relative;
+}
+
+.content_wr .content_timeline-left .content_left-history li {
+  list-style: none;
+  cursor: pointer;
+  font-weight: bold;
+  height: calc(100% / 3);
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.content_wr .content_timeline-left .content_left-history li img {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: -5px;
+}
+
+/* style for history events left layout end */
+
+/* style for history events right  layout start */
+
+.content_wr .content_timeline-right {
+  width: 100%;
+  position: relative;
+}
+
+/*  style for 2010 events layout start */
+.content_wr .content_timeline-right .content_event--2010-banner img {
+  width: 100%;
+}
+
+.content_wr .content_timeline-right .content_event--2010-banner {
+  position: relative;
+}
+
+
+.content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title {
+  top: 40%;
+}
+
+.content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title {
+  position: absolute;
+  top: 32%;
+  margin-left: 30%;
+  width: 300px;
+  text-align: center;
+}
+
+.content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title h2 {
+  color: #d72229;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.content_wr .content_timeline-right .content_event--2010-banner p {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 24px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list {
+  width: 50%;
+  margin: 80px auto 0 auto;
+  position: relative;
+  padding: 10px 0 80px 0;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list::after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 1px;
+  background: gray;
+  content: "";
+  width: 1px;
+  height: 100%;
+  display: block;
+  z-index: -2;
+}
+
+/* style for item left */
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item {
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img img {
+  width: 100%;
+  height: 370px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+  margin-left: 20px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d72229;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub p b{
+  font-weight: 900;
+}
+/* style for item end */
+
+/** style for item right start*/
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-img img {
+  width: 100%;
+  height: 370px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub {
+  margin-right: 20px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d72229;
+  text-align: end;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub p b{
+  font-weight: 900;
+}
+
+/** style for item right end*/
+
+
+/* style for 2020 events layout start  */
+
+/* style for banner of 2020 events layout start */
+.content_wr .content_timeline-right .content_event--2020-banner img {
+  width: 100%;
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner {
+  position: relative;
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title {
+  position: absolute;
+  top: 31%;
+  margin-left: 30px;
+  width: 300px;
+  text-align: center;
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title h2 {
+  color: #d72229;
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title h3 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner p {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 20px;
+  display: flex;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list {
+  margin-top: 90px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item {
+  position: relative;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item::after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 1px;
+  background: gray;
+  content: "";
+  width: 1px;
+  height: 100%;
+  display: block;
+  z-index: -2;
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner p i {
+  font-size: 10px;
+  color: #d72229;
+  margin-right: 5px;
+  line-height: 24px;
+}
+
+
+/* style for item left */
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img img {
+  width: 100%;
+  height: 370px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+  margin-left: 20px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d72229;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub p b {
+  font-weight: 900;
+}
+
+/* style for item end */
+
+/** style for item right start*/
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right::after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 1px;
+  background: gray;
+  content: "";
+  width: 1px;
+  height: 100%;
+  display: block;
+  z-index: -2;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-img img {
+  width: 100%;
+  height: 370px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub {
+  margin-right: 20px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d72229;
+  text-align: end;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub p {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* style for banner of 2020 events layout end */
+
+/* style for social network layout start */
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network .social_network {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 3px;
+  position: relative;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network .social_network .image_sub {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  right: 45px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 1px 1px 1px 1px silver;
+  font-size: 20px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network .social_network img {
+  padding: 10px;
+  width: 95%;
+  border-radius: 3px;
+  margin-bottom: 31px;
+  box-shadow: 1px 2px 2px 1px silver;
+}
+
+/* item left */
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item {
+  width: 100%;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item .content_event--2020-item-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item .content_event--2020-item-img img {
+  width: 100%;
+  /* height: 260px; */
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item .content_event--2020-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item .content_event--2020-item-content .content_event--2020-item-sub {
+  margin-left: 20px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item .content_event--2020-item-content .content_event--2020-item-sub h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d72229;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item .content_event--2020-item-content .content_event--2020-item-sub p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* item left end */
+
+/* item last start */
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item-last .content_event--2020-item-img img {
+  width: 100%;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item-last .content_event--2020-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item-last .content_event--2020-item-content .content_event--2020-item-sub {
+  margin-right: 20px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item-last .content_event--2020-item-content .content_event--2020-item-sub h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d72229;
+  text-align: end;
+}
+
+.content_wr .content_timeline-right .content_event--2020-list .content_event--2020-item-last .content_event--2020-item-content .content_event--2020-item-sub p {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* item last end */
+
+/** item right */
+
+.content_wr .content_timeline-right .content_event--2020-banner img {
+  width: 100%;
+  /* height: 260px; */
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner {
+  position: relative;
+  margin-top: 30px;
+}
+
+.content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title {
+  position: absolute;
+  top: 40%;
+  margin-left: 30%;
+  width: 300px;
+  text-align: center;
+}
+
+
+
+
+
+
+/* styles for slider review start */
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-text {
+  margin-top: 40px;
+  display: flex;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-text .prev_icon {
+  width: 5%;
+  height: 210px;
+  text-align: center;
+  line-height: 210px;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-text .prev_icon i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: red;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-text .next_icon {
+  width: 5%;
+  height: 210px;
+  text-align: center;
+  line-height: 210px;
+}
+
+.owl-carousel_text {
+  width: 90%;
+  height: 210px;
+  margin-left: 5%;
+}
+
+.owl-carousel_text .item {
+  width: 100%;
+  height: 210px;
+  border-radius: 15px;
+  border: 1px solid silver;
+}
+
+.prev_icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -40px;
+  margin: 0;
+}
+
+.next_icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -40px;
+  margin: 0;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-text .next_icon i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: red;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.owl-carousel_text .item .review_person .review_person-info .person_avt img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.owl-carousel_text .item .review_person .review_person-info {
+  height: 20%;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.owl-carousel_text .item .review_person .review_person-info .person_name p {
+  margin: 0;
+}
+
+.owl-carousel_text .item .review_person .review_person-info .person_name .name {
+  font-weight: bold;
+}
+
+.owl-carousel_text .item .review_person .review_person-info .person_name .career {
+  font-size: 12px;
+}
+
+.owl-carousel_text .item .review_person .review_person-text {
+  padding: 10px;
+}
+
+.owl-carousel_text .item .review_person .review_person-text p {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* styles for slider rivew end */
+
+/* styles for slider video start */
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-video {
+  margin-top: 40px;
+  display: flex;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-video .prev_icon {
+  width: 5%;
+  height: 160px;
+  text-align: center;
+  line-height: 160px;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-video .prev_icon i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: red;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-video .next_icon {
+  width: 5%;
+  height: 160px;
+  text-align: center;
+  line-height: 160px;
+}
+
+.owl-carousel_video {
+  width: 90%;
+  height: 160px;
+  margin-left: 5%;
+}
+
+.owl-carousel_video .item {
+  width: 100%;
+  height: 160px;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+
+.prev_icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -40px;
+  margin: 0;
+}
+
+.next_icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -40px;
+  margin: 0;
+}
+
+.content_event--2020-list .content_event--2020-review .content_event--2020-review-video .next_icon i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: red;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.owl-carousel_video .item iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* styles for slider video end */
+
+/* footer style start */
+.review_image {
+  margin-top: 50px;
+}
+
+.review_image .footer_grid .row {
+  width: 100%;
+  --bs-gutter-x: 0;
+}
+
+.review_image .footer_grid .footer_grid-item {
+  padding: 10px;
+  text-align: center;
+}
+
+.review_image .footer_grid .footer_grid-item img {
+  width: 100%;
+}
+
+/* animation */
+.item_2010_1 {
+  position: relative;
+}
+
+.item_2010_1 .content_event--2010-item-content {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2010_1 .content_event--2010-item-img {
+  opacity: 0;
+  padding-left: 50%;
+}
+
+.item_2010_1 img {
+  height: auto;
+}
+
+.item_2010_2 {
+  position: relative;
+}
+
+.item_2010_2 .content_event--2010-item-content {
+  opacity: 0;
+  padding-left: 50%;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2010_2 .content_event--2010-item-img {
+
+  opacity: 0;
+}
+
+
+
+.item_2010_3 {
+  position: relative;
+}
+
+.item_2010_3 .content_event--2010-item-content {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+}
+
+.item_2010_3 .content_event--2010-item-img {
+  opacity: 0;
+  padding-left: 50%;
+}
+
+
+.item_2010_4 {
+  position: relative;
+}
+
+.item_2010_4 .content_event--2010-item-content {
+  opacity: 0;
+  padding-left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.item_2010_4 .content_event--2010-item-img {
+
+  opacity: 0;
+}
+
+
+.item_2010_5 {
+  position: relative;
+}
+
+.item_2010_5 .content_event--2010-item-content {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2010_5 .content_event--2010-item-img {
+  opacity: 0;
+  padding-left: 50%;
+}
+
+
+.item_2010_6 {
+  position: relative;
+}
+
+.item_2010_6 .content_event--2010-item-content {
+  opacity: 0;
+  padding-left: 50%;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2010_6 .content_event--2010-item-img {
+
+  opacity: 0;
+}
+
+.item_2010_7 {
+  position: relative;
+}
+
+.item_2010_7 .content_event--2010-item-content {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2010_7 .content_event--2010-item-img {
+  opacity: 0;
+  padding-left: 50%;
+}
+
+
+
+.item_2010_8 {
+  position: relative;
+}
+
+.item_2010_8 .content_event--2010-item-content {
+  opacity: 0;
+  padding-left: 50%;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2010_8 .content_event--2010-item-img {
+
+  opacity: 0;
+}
+
+.item_2020_1 {
+  position: relative;
+}
+
+.item_2020_1 .content_event--2010-item-content {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2020_1 .content_event--2010-item-img {
+  opacity: 0;
+  padding-left: 50%;
+}
+
+.item_2020_1 img {
+  height: auto;
+}
+
+.item_2020_2 {
+  position: relative;
+}
+
+.item_2020_2 .content_event--2010-item-content {
+  opacity: 0;
+  padding-left: 50%;
+  position: absolute;
+  height: 100%;
+}
+
+.item_2020_2 .content_event--2010-item-img {
+
+  opacity: 0;
+}
+
+.button_prev_re {
+  width: 45px;
+  height: 45px;
+  background: #d22229;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+
+.button_next_re {
+  width: 45px;
+  height: 45px;
+  background: #d22229;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+
+@media (max-width:1600px)
+{
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image{
+    margin-top:22%;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_name{
+    top: 72%;
+    left: 26%;
+    font-size: 24px;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_description{
+    left: 29%;
+    font-size: 14px;
+  }
+
+  .content_wr .content_timeline-left .content_left-history{
+    margin-left:240px;
+  }
+
+  .content_title {
+    font-size:35px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img img{
+    height: 265px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-img img
+  {
+    height: 265px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img img{
+    height: 265px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-img img{
+    height: 265px;
+  }
+}
+
+/* footer style end */
+@media(max-width:1400px) {
+  .content_wr .content_timeline-left .content_left-history{
+    margin-left:200px;
+  }
+
+  
+
+  .content_title{
+    font-size: 30px;
+  }
+
+
+
+}
+
+@media (max-width:1200px)
+{
+  .wrapper_wr .container_wr .header_wr .header_bottom{
+    background-size:auto ;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content{
+    width: 75%;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content p{
+    font-size:15px;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image{
+    margin-left: 10%;
+    margin-top: 33%;
+  }
+
+  .content_wr .content_timeline-left .content_left-history{
+    margin-left:120px;
+  }
+}
+
+@media(max-width:992px) {
+  .wrapper_wr .container_wr .header_wr .header_bottom {
+    background-image: none;
+  }
+
+  .content_wr .content_timeline-left {
+    display: none;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_name {
+    top: 74%;
+    left: 34%;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_description {
+    top: 84%;
+    left: 36%;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content {
+    width: 100%;
+  }
+
+  .content_title {
+    font-size: 24px;
+  }
+
+
+  .item_2010_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_3 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_3 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_4 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_4 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_5 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+
+  }
+
+  .item_2010_5 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_6 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_6 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_7 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_7 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_8 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_8 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner p {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list {
+    width: 100%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title {
+    margin-left: 0;
+    top: 11%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner p {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list {
+    padding: 0 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title {
+    top: 11%;
+    margin-left: 0%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+    margin: 20px 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content {
+    order: 2;
+    margin-top: 20px;
+    justify-content: start;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+  }
+
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right {
+    margin-top: 0;
+  }
+
+  .item_2020_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2020_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list::after {
+    display: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item {
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content {
+    margin-top: 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content {
+    margin: 20px 0;
+    order: 2;
+    justify-content: start;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right::after {
+    display: none;
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item::after {
+    display: none;
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+  }
+}
+
+@media(max-width:768px) {
+  .wrapper_wr .container_wr .header_wr .header_bottom {
+    background-image: none;
+  }
+
+  .content_wr .content_timeline-left {
+    display: none;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_name {
+    top: 74%;
+    left: 34%;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_description {
+    top: 84%;
+    left: 36%;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content {
+    width: 100%;
+  }
+
+  .content_title {
+    font-size: 24px;
+  }
+
+
+  .item_2010_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_3 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_3 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_4 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_4 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_5 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+
+  }
+
+  .item_2010_5 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_6 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_6 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_7 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_7 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_8 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_8 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner p {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list {
+    width: 100%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title {
+    margin-left: 0;
+    top: 11%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner p {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list {
+    padding: 0 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title {
+    top: 11%;
+    margin-left: 0%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+    margin: 20px 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content {
+    order: 2;
+    margin-top: 20px;
+    justify-content: start;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+  }
+
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right {
+    margin-top: 0;
+  }
+
+  .item_2020_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2020_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-img img {
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list::after {
+    display: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item {
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content {
+    margin-top: 20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content {
+    margin: 20px 0;
+    order: 2;
+    justify-content: start;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right::after {
+    display: none;
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item::after {
+    display: none;
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  /* responsive header layout for mobile devices start */
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--intro {
+    order: 1;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt {
+    order: 2;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--intro-content {
+    width: 100%;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* responsive header layout for mobile devices end */
+
+  .content_wr .content_timeline {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  /* responsive mobile for banner 2010 events start */
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 40px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title {
+    top: 35px;
+    margin-left: 0px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner img {
+    height: 120px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner p {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  /* responsive mobile for banner 2010 events end */
+
+  /* responsive mobile for banner 2020 events start */
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: bold;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title {
+    top: 35px;
+    margin-left: 0px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner img {
+    height: 120px;
+    margin-bottom:20px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner p {
+    width: 100%;
+    margin-top: 0;
+    padding: 0 20px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+
+  /* responsive mobile for banner 2020 events end */
+
+  .content_wr .content_timeline-left {
+    width: 0;
+    display: none;
+  }
+
+  .content_wr .content_timeline-right {
+    width: 100%;
+  }
+
+
+  /* reponsive layout 2010 events */
+
+  .content_wr .content_timeline-right .content_event--2010-list {
+    position: relative;
+    border-bottom: 1px solid gray;
+    margin-top: 40px;
+    width: 100%;
+    padding: 40px 0 0 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list::after {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    height: 1px;
+    background: gray;
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    z-index: -2;
+  }
+
+  /* item left */
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item {
+    margin-top: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img {
+    height: auto;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img img {
+    width: 60%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+    width: 70%;
+    margin-left: 30%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  /* item right */
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right {
+    margin-top: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-img img {
+    width: 60%;
+    margin-left: 15%;
+    order: 1;
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content {
+    width: 70%;
+    margin-left: 30%;
+    padding: 20px;
+    order: 2;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub p {
+    text-align: start;
+    text-align: justify;
+    font-size:14px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+    font-size:21px;
+  }
+
+
+  /* responsive 2020 events layout for mobile devices start*/
+  /* responsive 2020 events social networks for mobile devices start */
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network {
+    text-align: center;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network .social_network .image_sub {
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    right: 20px;
+  }
+
+  /* responsive 2020 events social networks for mobile devices end */
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right::after {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    height: 1px;
+    background: gray;
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    z-index: -2;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-img img {
+    width: 60%;
+    margin-left: 15%;
+    order: 1;
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content {
+    width: 70%;
+    margin-left: 30%;
+    padding: 20px;
+    order: 2;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub p {
+    text-align: start;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+    font-size:21px;
+  }
+
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item {
+    margin-top: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item::after {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    height: 1px;
+    background: gray;
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    z-index: -2;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img {
+    height: auto;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img img {
+    width: 60%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+    width: 70%;
+    margin-left: 30%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .item_2010_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_3 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_3 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_4 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_4 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_5 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+
+  }
+
+  .item_2010_5 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_6 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_6 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_7 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_7 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_8 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_8 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2020_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2020_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_top .bg_mb {
+    display: block;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_top .bg_pc {
+    display: none;
+  }
+
+  .margin_left_content {
+    margin-left: 0;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--intro {
+    width: 100%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text {
+    margin-top: 30px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .content_wr .content_title {
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .line_down_1 {
+    display: block;
+
+  }
+
+  .line_down_2 {
+    display: none;
+  }
+
+  /*item last end */
+  /* responsive 2020 events end */
+  /* responsive 2020 events layout for mobile devices end*/
+
+  .wrapper_wr .container_wr .header_wr .header_bottom {
+    background: none;
+
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_name {
+    position: absolute;
+    top: 72%;
+    left: 29%;
+    font-size: 27px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content p {
+    margin-bottom: 25px;
+    line-height: 21px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_description {
+    font-size: 15px;
+    left: 34%;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt {
+    background-image: url(../public/uploads/pc/sec2-bg.png);
+    background-repeat: round;
+    background-size: initial;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub p{
+    font-size: 14px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub p b{
+    font-weight: 900;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub h3{
+    font-size: 21px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub p{
+    font-size:14px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub h3{
+    font-size:21px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  /* responsive header layout for mobile devices start */
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--intro {
+    order: 1;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt {
+    order: 2;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--intro-content {
+    width: 100%;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* responsive header layout for mobile devices end */
+
+  .content_wr .content_timeline {
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  /* responsive mobile for banner 2010 events start */
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title h3 {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner .content_event--2010-title {
+    top: 35px;
+    margin-left: -61px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner img {
+    height: 120px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-banner p {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  /* responsive mobile for banner 2010 events end */
+
+  /* responsive mobile for banner 2020 events start */
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner .content_event--2020-title {
+    top: 50px;
+    margin-left: -61px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner img {
+    height: 120px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-banner p {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+
+  /* responsive mobile for banner 2020 events end */
+
+  .content_wr .content_timeline-left {
+    width: 0;
+    display: none;
+  }
+
+  .content_wr .content_timeline-right {
+    width: 100%;
+  }
+
+
+  /* reponsive layout 2010 events */
+
+  .content_wr .content_timeline-right .content_event--2010-list {
+    position: relative;
+    border-bottom: 1px solid gray;
+    margin-top: 40px;
+    width: 100%;
+    padding: 40px 0 0 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list::after {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    height: 1px;
+    background: gray;
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    z-index: -2;
+  }
+
+  /* item left */
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item {
+    margin-top: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img {
+    height: auto;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-img img {
+    width: 60%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+    width: 70%;
+    margin-left: 30%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  /* item right */
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right {
+    margin-top: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-img img {
+    width: 60%;
+    margin-left: 15%;
+    order: 1;
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content {
+    width: 70%;
+    margin-left: 30%;
+    padding: 20px;
+    order: 2;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub p {
+    text-align: start;
+    text-align: justify;
+  }
+
+  .content_wr .content_timeline-right .content_event--2010-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+  }
+
+
+  /* responsive 2020 events layout for mobile devices start*/
+  /* responsive 2020 events social networks for mobile devices start */
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network {
+    text-align: center;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network .social_network .image_sub {
+    top: -8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    right: 20px;
+  }
+
+  /* responsive 2020 events social networks for mobile devices end */
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right::after {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    height: 1px;
+    background: gray;
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    z-index: -2;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-img img {
+    width: 60%;
+    margin-left: 15%;
+    order: 1;
+    height: auto;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content {
+    width: 70%;
+    margin-left: 30%;
+    padding: 20px;
+    order: 2;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub p {
+    text-align: start;
+    text-align: justify;
+    font-weight:500;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item-right .content_event--2010-item-content .content_event--2010-item-sub h3 {
+    text-align: start;
+  }
+
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item {
+    margin-top: 0;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item::after {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    height: 1px;
+    background: gray;
+    content: "";
+    width: 1px;
+    height: 100%;
+    display: block;
+    z-index: -2;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img {
+    height: auto;
+    border: none;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-img img {
+    width: 60%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2010-item .content_event--2010-item-content .content_event--2010-item-sub {
+    width: 70%;
+    margin-left: 30%;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+
+  .item_2010_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_3 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_3 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_4 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_4 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_5 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+
+  }
+
+  .item_2010_5 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+  }
+
+  .item_2010_6 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    height: 100%;
+    text-align: start;
+  }
+
+  .item_2010_6 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2010_7 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_7 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2010_8 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2010_8 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .item_2020_1 .content_event--2010-item-content {
+    opacity: 1;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_1 .content_event--2010-item-img {
+    opacity: 1;
+    padding-left: 0;
+  }
+
+  .item_2020_2 .content_event--2010-item-content {
+    opacity: 1;
+    padding-left: 0;
+    position: unset;
+    top: 50%;
+  }
+
+  .item_2020_2 .content_event--2010-item-img {
+
+    opacity: 1;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_top .bg_mb {
+    display: block;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_top .bg_pc {
+    display: none;
+  }
+
+  .margin_left_content {
+    margin-left: 0;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--intro {
+    width: 100%;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text {
+    margin-top: 30px;
+  }
+
+  .content_wr .content_timeline-right .content_event--2020-list .content_event--2020-social_network {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_image img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .content_wr .content_title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .line_down_1 {
+    display: block;
+
+  }
+
+  .line_down_2 {
+    display: none;
+  }
+
+  /*item last end */
+  /* responsive 2020 events end */
+  /* responsive 2020 events layout for mobile devices end*/
+
+  .wrapper_wr .container_wr .header_wr .header_bottom {
+    background: none;
+
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_name {
+    position: absolute;
+    top: 72%;
+    left: 25%;
+    font-size: 23px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .header_bottom--intro .header_bottom--intro-text .header_bottom--intro-content p {
+    margin-bottom: 25px;
+    line-height: 21px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt .avt_description {
+    font-size: 13px;
+    left: 28%;
+  }
+
+  .wrapper_wr .container_wr .header_wr .header_bottom .header_bottom--avt {
+    background-image: url(../public/uploads/pc/sec2-bg.png);
+    background-repeat: round;
+    background-size: initial;
+  }
+}
